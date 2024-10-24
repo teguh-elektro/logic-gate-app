@@ -15,9 +15,9 @@
 
     gtag('config', 'G-SGMRJCWWRN');
   </script>
-  <script type="module" crossorigin src="/assets/main-af23be4f.js"></script>
+  <script type="module" crossorigin src="/assets/main-0ba3d55e.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/assets/index-6c638e29.css">
+  <link rel="stylesheet" href="/assets/index-7c54d896.css">
 </head>
 
 <body>
@@ -38,8 +38,12 @@
         <div class="dropdown">
           <div class="dropbtn" id="file-menu">File</div>
           <div class="dropdown-content">
-            <a href="#" id="import">Import</a>
-            <a href="#" id="export">Export</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="open">Open</a>
+            <a href="#" id="save">Save</a>
+            <!-- <a href="#" id="share">Share</a> -->
+            <!-- <a href="#" id="import">Import</a>
+            <a href="#" id="export">Export</a> -->
           </div>
         </div>
         <div class="dropdown">
@@ -51,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="editable-text" id="project-title" contenteditable="true">Untitled</div>
+      <div class="editable-text" id="project-title">Untitled</div>
       <input type="checkbox" id="simulate" class="simulate-toggle-checkbox" checked>
       <label for="simulate" class="simulate-toggle-label"></label>
     </div>
@@ -80,7 +84,7 @@
             <div class="component">
               <div class="component-title">
                 <input type="checkbox" id="component1" class="component-dropdown-checkbox">
-                <label for="component1" class="component-dropdown-label">Input & Output </label>
+                <label for="component1" class="component-dropdown-label" style="border-top: none;">Input & Output </label>
                 <label for="slide2" class="next">›</label>
                 <div class="component-list">
                   <div class="component-images">
@@ -98,7 +102,7 @@
                 <label for="slide1" class="prev">‹</label>
                 <input type="checkbox" id="component2" class="component-dropdown-checkbox">
                 <label for="component2" class="component-dropdown-label">Logic Gate </label>
-<!--                 <label for="slide3" class="next">›</label> -->
+                <!--                 <label for="slide3" class="next">›</label> -->
                 <div class="component-list">
                   <div class="component-images">
                     <img class="component-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABCCAYAAAAfQSsiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANDSURBVHhe7Zs/SHJRGIcNoSECh0gakgYxHFwcgggJHDRxCKRFQgJpEWmJaIlAI1oMWiJCEBeRFgeXCEKiJcSGCB3CRSOHCBpEaAiCN47fOQeLPr3nXv/cq+8DL13O70D1cF7x3nOuDhDJoCwBUJYAKEsAlCUAyhIAZQmAsgRAWQKgLAFkyYrH4/RqtJAlKxKJgMPhgFwuR0dGA9mydDpdszY2NqBSqdBkuFEsi9TY2BgcHBzQdHhRJIv8DAQCXJrZbIZUKkVnDR+KZRGur69haWmJS3O5XHB3d9fMhomuyGKcn5/DzMwMlxYKheD19ZWm2qersggfHx+wu7vLhU1MTEAsFqOptum6LEapVIK1tTUuzWazQSaToak26ZksRjabBbvdzqWtrq7Cw8MDTbVFz2UxTk5OwGAwcGnb29tQr9dpqg36Jovw/v4OW1tbXNjU1BScnp7SVP30VRbj/v4evF4vl7awsACXl5c0VS8DkcW4uLgAq9XKpfn9fnh6eqKp+hioLMbR0RGMj49zaXt7e/D5+UlT9aAKWYRarQabm5tc2OzsLCQSCZqqA9XIYtze3oLT6eTSlpeX4ebmhqaDRXWyGMlkEubm5ri0YDAIz8/PNB0MqpVF+Pr6gv39fS5Mr9fD4eEhTdtzfHwMbrcbpqenm0WuyZgSVC2LUS6XYX19nUuzWCyQTqdp+pNqtQorKyt87u8iGZkjB03IYlxdXcHi4iL/xz0eD+TzeZr+g4kymUzNe1HSuqTINRljwuSgKVmMs7MzMBqNXFo4HIa3t7dmmzFRf91KkTEmTE5LalIWodFowM7ODhc2OTkJ8/Pzzet2TzdIRuaQzzBRuCz2S6WUGmQxHh8fwefz/fj72m3VkZZsndupWkFZHaoVRW0YjUbpSP8ZaBuKMGhZ+AEvAU1/dejXysIvpRLA2x2JDN2NdC/aEB/RSODl5WW4H/51a2WNxGNlpbJww0IChUIBt8I6MdKbrCJtiNv3ElYWHgyRsLKKxSIeOSK0W1l4mO0X/5OFxyT/4Hcb4gHcNrSuLDza3QEmixW+NNCGVln4OkoHiCx80Uki+Aod0hGUJQDKEgBlCYCyBEBZAqAsAVCWZAC+AbZC4IM+yV2LAAAAAElFTkSuQmCC" draggable="true" title="NOT" id="image-2" />
@@ -112,15 +116,17 @@
                 </div>
               </div>
             </div>
-<!--             <div class="component">
+            <!-- <div class="component">
               <div class="component-title">
                 <label for="slide2" class="prev">‹</label>
                 <input type="checkbox" id="component3" class="component-dropdown-checkbox">
                 <label for="component3" class="component-dropdown-label">Flip Flop </label>
                 <div class="component-list">
                   <div class="component-images">
-                    <img class="component-image" src="./assets/rs-ff.png" draggable="true" title="RS-FF" id="image-11" />
-                    <img class="component-image" src="./assets/jk-ff.png" draggable="true" title="JK-FF" id="image-12" />
+                    <img class="component-image" src="./assets/rs-ff.png" draggable="true" title="RS-FF"
+                      id="image-11" />
+                    <img class="component-image" src="./assets/jk-ff.png" draggable="true" title="JK-FF"
+                      id="image-12" />
                     <img class="component-image" src="./assets/d-ff.png" draggable="true" title="D-FF" id="image-13" />
                     <img class="component-image" src="./assets/t-ff.png" draggable="true" title="T-FF" id="image-14" />
                   </div>
@@ -131,6 +137,7 @@
         </div>
       </aside>
     </div>
+    <div class="message" id="message-body"></div>
     <div class="toast" id="toast-body">
       <p id="toast-message"></p>
     </div>
@@ -143,9 +150,27 @@
         </div>
       </div>
     </div>
+
+    <div class="modal" id="opening-modal">
+      <div class="modal-body">
+        <p>Before starting, you should:</p>
+        <hr>
+        <button class="button" id="new-file-button">Create a New File</button>
+        <br>
+        <button class="button" id="open-file-button">Open an Existing File</button>
+        <hr>
+        <button class="button link" id="skip-file-button">Skip</button>
+      </div>
+    </div>
   </div>
   <input type="file" id="file-input" accept=".json" style="display: none;">
   
+  <script src="https://js.sentry-cdn.com/48ab453755b05b733e24a17660dce127.min.js" crossorigin="anonymous"></script>
+  <script>
+    Sentry.onLoad(function() {
+      Sentry.init({});
+    });
+  </script>
 </body>
 
 </html>
