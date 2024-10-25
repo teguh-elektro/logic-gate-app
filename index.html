@@ -15,9 +15,9 @@
 
     gtag('config', 'G-SGMRJCWWRN');
   </script>
-  <script type="module" crossorigin src="/assets/main-52f72b9c.js"></script>
+  <script type="module" crossorigin src="/assets/main-9734d623.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/assets/index-7c54d896.css">
+  <link rel="stylesheet" href="/assets/index-3df94444.css">
 </head>
 
 <body>
@@ -74,6 +74,7 @@
           <button id="undo-button" style="color: #888;">Undo</button>
           <button id="redo-button" style="color: #888;">Redo</button>
         </div>
+        <div class="message" id="message-body"></div>
       </main>
       <aside class="sidebar" id="component">
         <div class="component-container">
@@ -84,7 +85,8 @@
             <div class="component">
               <div class="component-title">
                 <input type="checkbox" id="component1" class="component-dropdown-checkbox">
-                <label for="component1" class="component-dropdown-label" style="border-top: none;">Input & Output </label>
+                <label for="component1" class="component-dropdown-label" style="border-top: none;">Input & Output
+                </label>
                 <label for="slide2" class="next">›</label>
                 <div class="component-list">
                   <div class="component-images">
@@ -137,7 +139,6 @@
         </div>
       </aside>
     </div>
-    <div class="message" id="message-body"></div>
     <div class="toast" id="toast-body">
       <p id="toast-message"></p>
     </div>
@@ -163,14 +164,9 @@
       </div>
     </div>
   </div>
-  <input type="file" id="file-input" accept="*" style="display: none;">
+  <input type="file" id="file-input" style="display: none;">
   
-  <script src="https://js.sentry-cdn.com/48ab453755b05b733e24a17660dce127.min.js" crossorigin="anonymous"></script>
-  <script>
-    Sentry.onLoad(function() {
-      Sentry.init({});
-    });
-  </script>
+  
 </body>
 
 </html>
