@@ -8,7 +8,7 @@
   <title>App - Logic Gate Online</title>
   <!-- Google tag (gtag.js) -->
   
-  <script type="module" crossorigin src="/assets/main-f3e4e362.js"></script>
+  <script type="module" crossorigin src="/assets/main-38977589.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
   <link rel="stylesheet" href="/assets/index-75da3026.css">
 </head>
@@ -42,9 +42,9 @@
         <div class="dropdown">
           <div class="dropbtn" id="help-menu">Help</div>
           <div class="dropdown-content">
-            <a href="https://www.logic-gate.online">Home</a>
+            <a id="home-button" href="#">Home</a>
             <a href="#" id="guide">Guide</a>
-            <a href="https://github.com/teguh-elektro/logic-gate-app/issues" target="_blank">Report</a>
+            <a id="report-button" href="#" target="_blank">Report</a>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
                     <img class="component-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABCCAYAAAD5aOBmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7dshrsJAFEbhLgCHImmCR6NIPTi2gGAFBIFiC2yjBjQBjaoHxQZqWAG5L50M5CXQQv5MeO3jfMmYi+jMQd/IICGciHAiwokIJyKciHCit8Jdr1ebz+eWJIm1Wi2LoqjWp9vt2ng8tjRN/QvCexluv99br9d7esEmnOl06l8SVmW4y+VicRy7CwwGA9vtdpbnuf+1vk6nk61Wq3u82WzmfwmnMtxkMnEfHg6HftIsh8PhHm+73fppGJXh2u22+2jxDzbVcrl0b1gsFn4SRmm48/nsPtjpdPzELMuy+z9Y59Pv9/2NzTabjZuNRiM/CaM03C3S70s0Mdyzd4QghQt9iVA+eWfCiQgnIpyIcCLCiQgnIpyIcCLCiQgnIpyIcCLCiQgnIpyIcCLCib4mnHrK3kq4F+frw4W+M+FEhBMRTkQ4EeFEhBMRTkQ4EeFEhBMRTkQ4EeFEhBMRTkQ4EeFEUri6nz8N918WRNbrtZt9bEGkcFtJOh6PftI8H19JKrAEV64yHGuX5SrDFVj0fe5luAKr5Y/eCodHhBMRTkQ4EeFEhBMRTmL2A1KAnVIiPGUNAAAAAElFTkSuQmCC" draggable="true" title="PUSH BUTTON"
                       id="image-4" />
                     <img class="component-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAA/CAYAAAC7KnXJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKWSURBVHhe7ZtBi6lhFMeVhayYMmVhoZRmwWTDFlkJzQewsRELG/IFKBsfYEQUn4GSiC9gYchWSknJwid4p3N6uOfeS83czHveuudXp/E/s3j+/aZ5h7d5TZpwRWQQRAZBZBBEBkFkEO7KmM/nWjab1RwOh2YymQw1gUBAq1QqqunjuCsjHo/fLGKkabfbqu1juCnjeDxeD/z4+FBb49BsNrFbMplUm8dwU8ZqtcLDfD6f2hiLn+onMghfkjGbzTAbbXSXsV6v/yrBPV6vF7/qLuN8PuNrt9utvstHvV7HLolEgkcGAK+tVqt2OBwwcwHve6BLsVjkk2G32zEvFgvMXESjUezx/v7OJ+P19RXzaDTCzIXL5cIew+GQT8bld7TX62HmYL/fYweYP/s9ii/JyOfzmOECxsVkMsEOT09PvDJqtRrmUqmEmYNGo4EdwuEwr4xut4s5nU5j5gB+ENChUCjwyoALJ+RYLIaZg1QqhR3gLwmrjOVy+SOHf4eXlxfsMB6PeWVcPtI/Pz9j5sBsNmOH7XbLKwOADMPBZrP57Xx2GU6nE3en00lt9GMwGODZHo8HM7uMYDCIO7h+6M3lA9rb2xtmdhlQBHbwVlhvMpkMnl0ulzGzy7i8C+10OmqjH6FQCM+Ge58Auwy4NQ+7arWqNvphs9nw7Ol0ipldRqvVwl0ul1Mb/YBzYXa7HWZ2Gf1+/1qKYywWi2ryq9+/zj2JX5bBfVPY7/erJgaSEYlE1EYfbp17q98jEBkEkUEQGQSRQRAZBJFBEBkEkUEQGQSRQRAZBJFBEBkEkUEQGQSRQRAZhG/L4BqRQcZQMoyEyCDoKoM+YsH9v5+30PURC0AeviHIY1n/OSKDIDIIIoMgMq5o2ica9TR1rwLwaQAAAABJRU5ErkJggg==" draggable="true" title="TOGGLE BUTTON"
-                    id="image-6" />
+                      id="image-6" />
                     <img class="component-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAuCAYAAACSy7GmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJvSURBVGhD7Zk9jsIwEEZzAAoaWhoqrkABFQ1noEEcAXEGrkFDxTFoOAMlDQWiQKKf1csyq8Ei4AQnaJ08abSRf8b+Yns8YROpAY3IWGhExkIjMha+IvJ2u8l2u5X5fC6DwUB6vZ60Wq3UeKaMOtrQ9lMqFXk4HGQ2m0mSJLmMPvQtSmUiF4vFw8SHw6GsVivZ7XapgOv1mhrPlFFHG9sHH0UoXeTxeJTRaPQ30byr4q4+vvCZh1JFsiLdbjedXL/fl/1+f6/JD33xgS984tuX0kTytlXgZDKRy+Vyr/nldDrJZrOR5XIp4/FYOp1OajxTRh1tLPjAlwr1XdHSROoWZVIu6/Va2u12Wv/KaENbFxXKGD6UIlKDDNvLruD5fJbpdPogxMfoQ18Fn7p1fYJRcJEECp2cPYNMUrdvEaOvFYpvrXsXyIKL1EjIX0uRFXQNH5assVyCiiQ70QnZt8u50vJPzZ5Ru2teZUZBRZKGMSCXuEKE9AkyvoYvG3U1YWDsLIKKJN9kQLIVhavATjKE4VNhLMoYO4ugIkmsGdBe1Nx5doIhDJ8KY1HG2FkEFckXBAPa88jlbicYwvCp6Llk7CyeinSd5jUSbYUs5lmbTwyfCmNRxmdaFvUVWZR/tV2LUovAU4srpBbJQC3SOog+QQf7dqP91ILoP5qV6H/+gFr8kAVc1CqU7WXPaF7oq1sUnzbheEepIoG3rVsXIxK+CxQW2moUxfDlu4JK6SIVDUZqXOJkK6wIQki0MZ4po04vejWfIPOMykSCuyq+lnf1XSoVqZCdkIaRb5JY8wURzb/uvkUjMhYakbHQiIwDkR8MIPC43tO9AAAAAABJRU5ErkJggg==" draggable="true" title="LED" id="image-5" />
                   </div>
                 </div>
